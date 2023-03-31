@@ -7,6 +7,7 @@
     --border-color-legend: #b98d25;
     --border-color-epic: #488427;
     --border-color-costume: #68253d;
+    --border-color-curse: #8c239c;
     --border-color-special: linear-gradient(#059aff, #4333ff, #6b00ff, #cc00ff 90%);
     --border-color-exclusive: linear-gradient(#fceb36, #3cc108);
     --border-color-sc: linear-gradient(#ffc116, #ff2960);
@@ -19,6 +20,7 @@
     --background-color-legend: linear-gradient(#151312 20%, #36270b);
     --background-color-epic: linear-gradient(#151312 20%, #1d360b);
     --background-color-costume: linear-gradient(#151312 20%, #2a0e18);
+    --background-color-curse: linear-gradient(#151312 20%, #290e2a);
     --background-color-special: linear-gradient(#151312 20%, #310981);
     --background-color-exclusive: linear-gradient(#151312 20%, #35200f);
     --background-color-sc: linear-gradient(#151312 20%, #3a121c);
