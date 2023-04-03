@@ -104,7 +104,10 @@ body { background-color: #222; }
 }
 
 .itembox-caption {
-	max-width: 70px;
+	max-width: 64px;
+	text-align: center;
+	overflow-wrap: break-word;
+}
 
 .itembox.general {
 	background-image: var(--background-color-general);
