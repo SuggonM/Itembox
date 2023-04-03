@@ -9,6 +9,8 @@ body { background-color: #222; }
 	color: #fff;
 	border-width: 2px;
 	border-radius: 5px;
+	/* resize: both;
+	overflow: hidden; */
 	line-height: initial; /* initializing site's line-height: 1.75 */
 	box-sizing: initial;  /* initializing site's box-padding: content-box */
 	text-shadow:
