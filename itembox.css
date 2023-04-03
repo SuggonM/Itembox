@@ -29,6 +29,7 @@ body { background-color: #222; }
 
 .itembox > div:not(.item) { /* all children except the item */
 	z-index: 1; /* overlay on the item */
+	position: relative;
 }
 
 .itembox > div:not(.item) img { /* all images except the item */
@@ -45,7 +46,7 @@ body { background-color: #222; }
 	overflow: hidden; /* disallow level spam */
 	max-width: 100%; /* ^ */
 	white-space: nowrap; /* ^ */
-	margin-top: -3px; /* pull upward */
+	top: -3px; /* pull upward */
 	padding-inline: 1px; /* pad to prevent text-shadow cutoff */
 }
 
@@ -61,8 +62,8 @@ body { background-color: #222; }
 .banner {
 	align-self: start; /* placed top */
 	justify-self: end; /* placed right */
-	margin-top: -4px; /* pull upward */
-	margin-right: -4px; /* pull rightward */
+	top: -4px; /* pull upward */
+	right: -4px; /* pull rightward */
 }
 
 .banner img + img { /* consecutive banners */
@@ -83,7 +84,7 @@ body { background-color: #222; }
 .grade, .amount { /* grade and number of items */
 	align-self: end; /* placed bottom */
 	justify-self: center; /* placed center */
-	margin-bottom: -5px; /* pull downward */
+	bottom: -5px; /* pull downward */
 }
 
 .itembox:hover {
