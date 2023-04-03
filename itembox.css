@@ -7,7 +7,7 @@ body { background-color: #222; }
 	font-family: Noto Sans;
 	font-size: 12px;
 	color: #fff;
-	border-width: 2px;
+	border: 2px solid;
 	border-radius: 5px;
 	/* resize: both;
 	overflow: hidden; */
@@ -114,57 +114,52 @@ body { background-color: #222; }
 .itembox.general {
 	background-image: var(--background-color-general);
 	border-color: var(--border-color-general);
-	border-style: solid;
 }
 .itembox.normal {
 	background-image: var(--background-color-normal);
 	border-color: var(--border-color-normal);
-	border-style: solid;
 }
 .itembox.rare {
 	background-image: var(--background-color-rare);
 	border-color: var(--border-color-rare);
-	border-style: solid;
 }
 .itembox.unique {
 	background-image: var(--background-color-unique);
 	border-color: var(--border-color-unique);
-	border-style: solid;
 }
 .itembox.legend {
 	background-image: var(--background-color-legend);
 	border-color: var(--border-color-legend);
-	border-style: solid;
 }
 .itembox.epic {
 	background-image: var(--background-color-epic);
 	border-color: var(--border-color-epic);
-	border-style: solid;
 }
 .itembox.curse {
 	background-image: var(--background-color-curse);
 	border-color: var(--border-color-curse);
-	border-style: solid;
 }
 .itembox.special {
 	background-image: var(--background-color-special), var(--border-color-special);
 	background-clip: content-box, border-box;
 	padding: 2px;
+	border-style: none;
 }
 .itembox.exclusive {
 	background-image: var(--background-color-exclusive), var(--border-color-exclusive);
 	background-clip: content-box, border-box;
 	padding: 2px;
+	border-style: none;
 }
 .itembox.costume {
 	background-image: var(--background-color-costume);
 	border-color: var(--border-color-costume);
-	border-style: solid;
 }
 .itembox.sc {
 	background-image: var(--background-color-sc), var(--border-color-sc);
 	background-clip: content-box, border-box;
 	padding: 2px;
+	border-style: none;
 }
 .itembox:hover {
 	border: solid var(--border-color-hover) !important;
