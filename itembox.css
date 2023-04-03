@@ -106,7 +106,8 @@ body { background-color: #222; }
 .itembox-caption {
 	max-width: 70px;
 
-}	background-image: var(--background-color-general);
+.itembox.general {
+	background-image: var(--background-color-general);
 	border-color: var(--border-color-general);
 	border-style: solid;
 }
