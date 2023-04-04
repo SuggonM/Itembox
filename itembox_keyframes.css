@@ -1,22 +1,18 @@
-@keyframes slot_item_select_mark {
-    from {
-        width: calc(100% + 4px);
-        height: calc(100% + 4px);
-        inset: -2px;
-    }
-    to {
-        width: calc(100% + 20px);
-        height: calc(100% + 20px);
-        inset: -10px;
-    }
+@keyframes ItemSelect {
+	to {
+		scale: 1.25;
+	}
 }
 
 .itembox:hover:after {
-    content: '';
-    position: absolute;
-    background-color: #fff;
-    z-index: 2;
-    clip-path: polygon(0% 20%, 20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 100%, 100% 100%, 100% 0%, 0% 0%);
-    border-radius: 5px;
-    animation: slot_item_select_mark .2s linear infinite alternate-reverse;
+	content: '';
+	position: absolute;
+	background-color: #ff0000;
+	z-index: 2;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	clip-path: polygon(0% 20%, 20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 100%, 100% 100%, 100% 0%, 0% 0%);
+	border-radius: 5px;
+	inset: -2px;
+	animation: ItemSelect 2s linear infinite alternate-reverse;
 }
