@@ -9,8 +9,6 @@
 	position: absolute;
 	background-color: #ff0000;
 	z-index: 2;
-	width: calc(100% + 4px);
-	height: calc(100% + 4px);
 	clip-path: polygon(0% 20%, 20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 100%, 100% 100%, 100% 0%, 0% 0%);
 	border-radius: 5px;
 	inset: -2px;
