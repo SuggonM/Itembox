@@ -1,0 +1,18 @@
+@keyframes slot_item_select_mark {
+    from {
+        outline-offset: -2px;
+    }
+    to {
+        outline-offset: 6px;
+    }
+}
+
+.itembox:hover {
+    outline: 2px solid;
+    animation-name: slot_item_select_mark;
+    animation-iteration-count: infinite;
+    animation-duration: .2s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+}
+
