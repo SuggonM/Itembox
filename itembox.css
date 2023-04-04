@@ -11,6 +11,7 @@ body { background-color: #222; }
 	border-radius: 5px;
 	/* resize: both;
 	overflow: hidden; */
+	vertical-align: top;
 	line-height: initial; /* initializing site's line-height: 1.75 */
 	box-sizing: initial;  /* initializing site's box-padding: content-box */
 	text-shadow:
@@ -44,11 +45,7 @@ body { background-color: #222; }
 
 .level {
 	place-self: start; /* placed top-left */
-	overflow: hidden; /* disallow level spam */
-	max-width: 100%; /* ^ */
-	white-space: nowrap; /* ^ */
 	top: -3px; /* pull upward */
-	padding-inline: 1px; /* pad to prevent text-shadow cutoff */
 }
 
 .level > span {
@@ -99,14 +96,23 @@ body { background-color: #222; }
 	width: auto;
 }
 
+.level, .amount {
+	overflow: hidden; /* disallow level spam */
+	max-width: 100%; /* ^ */
+	white-space: nowrap; /* ^ */
+	padding-inline: 1px; /* pad to prevent text-shadow cutoff */
+}
+
 .itembox-container {
 	display: inline-flex;
 	flex-direction: column;
 	align-items: center;
+	vertical-align: top;
 }
 
 .itembox-caption {
 	max-width: 64px;
+	color: #e6e6e6;
 	text-align: center;
 	overflow-wrap: break-word;
 }
