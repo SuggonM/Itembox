@@ -1,4 +1,6 @@
-body { background-color: #222; }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap');
+
+body { background-color: #222; color: #e6e6e6}
 
 .itembox {
 	display: inline-grid;
