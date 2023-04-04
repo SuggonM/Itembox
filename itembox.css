@@ -152,13 +152,13 @@ body { background-color: #222; color: #e6e6e6}
 	background-image: var(--background-color-special), var(--border-color-special);
 	background-clip: content-box, border-box;
 	padding: 2px;
-	border-style: none;
+	border: none;
 }
 .itembox.exclusive {
 	background-image: var(--background-color-exclusive), var(--border-color-exclusive);
 	background-clip: content-box, border-box;
 	padding: 2px;
-	border-style: none;
+	border: none;
 }
 .itembox.costume {
 	background-image: var(--background-color-costume);
@@ -168,10 +168,10 @@ body { background-color: #222; color: #e6e6e6}
 	background-image: var(--background-color-sc), var(--border-color-sc);
 	background-clip: content-box, border-box;
 	padding: 2px;
-	border-style: none;
+	border: none;
 }
 .itembox:hover {
-	border: solid var(--border-color-hover) !important;
+	border: 2px solid var(--border-color-hover) !important;
 	background: var(--background-color-hover) !important;
 	padding: 0 !important;
 }
