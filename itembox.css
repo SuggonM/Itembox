@@ -42,7 +42,7 @@ body { background-color: #222; color: #e6e6e6}
 	width: auto;
 }
 
-.itembox + .itembox { /* consecutive itemboxes */
+:is(.itembox, .itembox-container) + :is(.itembox, .itembox-container) { /* consecutive itemboxes */
 	margin-left: 5px; /* gap between them */
 }
 
