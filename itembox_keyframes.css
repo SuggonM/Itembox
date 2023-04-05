@@ -7,10 +7,10 @@
 .itembox:hover:after {
 	content: '';
 	position: absolute;
-	background-color: #ff0000;
 	z-index: 2;
+	background-color: #fff;
 	clip-path: polygon(0% 20%, 20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 100%, 100% 100%, 100% 0%, 0% 0%);
 	border-radius: 5px;
-	inset: -2px;
-	animation: ItemSelect 2s linear infinite alternate-reverse;
+	inset: -2px; /* bg size extended to border-box */
+	animation: ItemSelect .2s linear infinite alternate-reverse;
 }
