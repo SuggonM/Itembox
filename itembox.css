@@ -145,6 +145,10 @@ body { background-color: #222; color: #e6e6e6}
 	background-image: var(--background-color-curse);
 	border: 2px solid var(--border-color-curse);
 }
+.itembox.costume {
+	background-image: var(--background-color-costume);
+	border: 2px solid var(--border-color-costume);
+}
 .itembox.special {
 	background-image: var(--background-color-special), var(--border-color-special);
 	background-clip: content-box, border-box;
@@ -154,10 +158,6 @@ body { background-color: #222; color: #e6e6e6}
 	background-image: var(--background-color-exclusive), var(--border-color-exclusive);
 	background-clip: content-box, border-box;
 	padding: 2px;
-}
-.itembox.costume {
-	background-image: var(--background-color-costume);
-	border: 2px solid var(--border-color-costume);
 }
 .itembox.sc {
 	background-image: var(--background-color-sc), var(--border-color-sc);
