@@ -100,7 +100,7 @@ body { background-color: #222; color: #e6e6e6}
 }
 
 .level, .amount {
-	overflow: hidden; /* disallow level spam */
+	overflow: hidden; /* disallow spam */
 	max-width: 100%; /* ^ */
 	white-space: nowrap; /* ^ */
 	padding-inline: 1px; /* pad to prevent text-shadow cutoff */
