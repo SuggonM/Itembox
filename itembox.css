@@ -12,7 +12,7 @@ body { background-color: #222; color: #e6e6e6}
 	border-radius: 5px;
 	/* resize: both;
 	overflow: hidden; */
-	position: relative;
+	position: relative; /* ::after has position: absolute */
 	vertical-align: middle;
 	line-height: initial; /* initializing site's line-height: 1.75 */
 	box-sizing: initial;  /* initializing site's box-padding: content-box */
@@ -24,7 +24,7 @@ body { background-color: #222; color: #e6e6e6}
 	1px  1px 0 #000,
    -1px -1px 0 #000,
 	1px -1px 0 #000,
-   -1px  1px 0 #000; /* 1px outline for text */
+   -1px  1px 0 #000; /* 1px text outline */
 }
 
 .itembox > div { /* all children of itembox */
@@ -33,7 +33,7 @@ body { background-color: #222; color: #e6e6e6}
 
 .itembox > div:not(.item) { /* all children except the item */
 	z-index: 1; /* overlay on the item */
-	position: relative;
+	position: relative; /* to position them correctly */
 }
 
 .itembox > div:not(.item) img { /* all images except the item */
@@ -51,7 +51,7 @@ body { background-color: #222; color: #e6e6e6}
 }
 
 .level > span {
-	vertical-align: middle; /* middle-aligned like in-game */
+	vertical-align: middle; /* font-size variation middle-aligned */
 }
 
 .level-text {
@@ -81,21 +81,20 @@ body { background-color: #222; color: #e6e6e6}
 	image-rendering: pixelated;
 }
 
-.grade, .amount { /* grade and number of items */
+.grade, .amount {
 	align-self: end; /* placed bottom */
 	justify-self: center; /* placed center */
 	bottom: -5px; /* pull downward */
 }
 
-.exclusive-icon {
-	place-self: end;
-	bottom: -5px;
-	right: -4px;
+.exclusive-icon { /* kama, bari & mayreel artifacts */
+	place-self: end; /* placed bottom-right */
+	bottom: -5px; /* pull downward */
+	right: -4px; /* pull rightward */
 }
 
 .exclusive-icon img {
-	height: 22px !important;
-	width: auto;
+	height: 22px !important; /* cuz selector has less specificity */
 }
 
 .level, .amount {
@@ -114,7 +113,6 @@ body { background-color: #222; color: #e6e6e6}
 
 .itembox-caption {
 	max-width: 64px;
-	color: #e6e6e6;
 	text-align: center;
 	overflow-wrap: break-word;
 }
