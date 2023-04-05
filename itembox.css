@@ -77,7 +77,6 @@ body { background-color: #222; color: #e6e6e6}
 .item img {
 	max-width: 64px;
 	max-height: 64px;
-	object-fit: scale-down; /* shrink if unfit */
 	image-rendering: pixelated;
 }
 
