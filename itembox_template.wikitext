@@ -1,0 +1,45 @@
+<noinclude>{{Item|Liberator|type=Weapon|rarity=Epic|grade=5|level=92|banner1=ExWeapon|banner2=Collection|caption=[[Liberator]]}}</noinclude>
+
+<includeonly>
+{{#if: {{{caption|}}}} |
+<{{{scope|div}}} class="itembox-container">
+}}
+<{{{scope|div}}} class="itembox {{{rarity|general}}}">
+	{{#if: {{{level|}}} |
+		<{{{scope|div}}} class="level">
+			<span class="level-text">Lv.</span><span class="level-number">{{{level}}}</span>
+		</{{{scope|div}}}>
+	}}
+	{{#if: {{{banner|{{{banner1|}}}}}} |
+		<{{{scope|div}}} class="banner">
+			[[File:Icon Banner {{{banner1|{{{banner}}}}}}.png]]{{#if: {{{banner2|}}} | [[File:Icon Banner {{{banner2}}}.png]] }}
+		</{{{scope|div}}}>
+	}}
+	{{#if: {{{1|{{{file|}}} |
+		<{{{scope|div}}} class="item" {{#if: {{{item-height|{{{item-scale|}}}}}} | style="{{#if: {{{item-height|}}} | --height: {{{item-height}}}; }} {{#if: {{{item-scale|}}} | scale: {{{item-scale}}}; }}">
+			{{{file|[[File:{{{type|}}} {{{1|}}}.png]]}}}
+		</{{{scope|div}}}>
+	}}
+	{{#if: {{{grade|}}} |
+		<{{{scope|div}}} class="grade">
+			[[File:Icon EquipStar {{{rarity}}} {{{grade}}}.png]]
+		</{{{scope|div}}}>
+	}}
+	{{#if: {{{amount|}}} |
+		<{{{scope|div}}} class="amount">
+			{{{amount}}}
+		</{{{scope|div}}}>
+	}}
+	{{#ifeq: {{{rarity}}} | exclusive |
+		<{{{scope|div}}} class="exclusive-icon">
+			[[File:Icon Banner Exclusive.png]]
+		</{{{scope|div}}}>
+	}}
+</{{{scope|div}}}>
+{{#if: {{{caption|}}} |
+<{{{scope|div}}} class="itembox-caption">
+	{{{caption}}}
+</{{{scope|div}}}>
+</{{{scope|div}}}>
+}}
+</includeonly>
