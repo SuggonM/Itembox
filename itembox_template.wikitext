@@ -1,7 +1,7 @@
 <noinclude>{{Item|Liberator|type=Weapon|rarity=Epic|grade=5|level=92|banner1=ExWeapon|banner2=Collection|caption=[[Liberator]]}}</noinclude>
 
 <includeonly>
-{{#if: {{{caption|}}}} |
+{{#if: {{{caption|}}} |
 <{{{scope|div}}} class="itembox-container">
 }}
 <{{{scope|div}}} class="itembox {{{rarity|general}}}">
