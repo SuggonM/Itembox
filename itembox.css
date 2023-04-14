@@ -31,12 +31,12 @@ body { background-color: #222; color: #e6e6e6}
 	grid-area: 1/1; /* forced into single cell to enable overlapping */
 }
 
-.itembox > div:not(.item) { /* all children except the item */
+.itembox > :not(.item) { /* all children except the item */
 	z-index: 1; /* overlay on the item */
 	position: relative; /* to position them correctly */
 }
 
-.itembox > div:not(.item) img { /* all images except the item */
+.itembox > :not(.item) img { /* all images except the item */
 	height: 18px;
 	width: auto;
 }
@@ -45,58 +45,58 @@ body { background-color: #222; color: #e6e6e6}
 	margin-left: 5px; /* gap between them */
 }
 
-.level {
+.itembox .level {
 	place-self: start; /* placed top-left */
 	top: -3px; /* pull upward */
 }
 
-.level > span {
+.itembox .level > span {
 	vertical-align: middle; /* font-size variation middle-aligned */
 }
 
-.level-text {
+.itembox .level-text {
 	font-size: 10px;
 	color: #caaa87;
 }
 
-.banner {
+.itembox .banner {
 	align-self: start; /* placed top */
 	justify-self: end; /* placed right */
 	top: -4px; /* pull upward */
 	right: -4px; /* pull rightward */
 }
 
-.banner img + img { /* consecutive banners */
+.itembox .banner img + img { /* consecutive banners */
 	margin-left: -1px; /* gap between them */
 }
 
-.item {
+.itembox .item {
 	place-self: center; /* placed center */
 }
 
-.item img {
+.itembox .item img {
 	max-width: 64px;
 	max-height: 64px;
 	image-rendering: pixelated;
 }
 
-.grade, .amount {
+.itembox .grade, .itembox .amount {
 	align-self: end; /* placed bottom */
 	justify-self: center; /* placed center */
 	bottom: -5px; /* pull downward */
 }
 
-.exclusive-icon { /* kama, bari & mayreel artifacts */
+.itembox .exclusive-icon { /* kama, bari & mayreel artifacts */
 	place-self: end; /* placed bottom-right */
 	bottom: -5px; /* pull downward */
 	right: -4px; /* pull rightward */
 }
 
-.exclusive-icon img {
-	height: 22px !important; /* cuz selector has less specificity */
+.itembox .exclusive-icon img {
+	height: 22px; /* cuz selector has less specificity */
 }
 
-.level, .amount {
+.itembox .level, .itembox .amount {
 	overflow: hidden; /* disallow spam */
 	max-width: 100%; /* ^ */
 	white-space: nowrap; /* ^ */
@@ -164,9 +164,9 @@ body { background-color: #222; color: #e6e6e6}
 	padding: 2px;
 }
 .itembox:hover {
-	background: var(--background-color-hover) !important;
-	border: 2px solid var(--border-color-hover) !important;
-	padding: 0 !important;
+	background: var(--background-color-hover);
+	border: 2px solid var(--border-color-hover);
+	padding: 0;
 }
 
 /* ---- miscellaneous ---- */
