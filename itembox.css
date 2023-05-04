@@ -16,15 +16,6 @@ body { background-color: #222; color: #e6e6e6}
 	vertical-align: middle;
 	line-height: initial; /* initializing site's line-height: 1.75 */
 	box-sizing: initial;  /* initializing site's box-padding: content-box */
-	text-shadow:
-	1px    0 0 #000,
-   -1px    0 0 #000,
-	  0  1px 0 #000,
-	  0 -1px 0 #000,
-	1px  1px 0 #000,
-   -1px -1px 0 #000,
-	1px -1px 0 #000,
-   -1px  1px 0 #000; /* 1px text outline */
 }
 
 .itembox > div { /* all children of itembox */
