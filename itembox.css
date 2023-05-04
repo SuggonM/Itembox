@@ -69,6 +69,7 @@ body { background-color: #222; color: #e6e6e6}
 	max-width: 64px;
 	max-height: 64px;
 	image-rendering: pixelated;
+	cursor: pointer;
 }
 
 .itembox .grade, .itembox .amount {
