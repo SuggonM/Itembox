@@ -8,6 +8,7 @@ body { background-color: #222; color: #e6e6e6}
 	height: 64px;
 	font-family: Noto Sans;
 	font-size: 12px;
+	font-weight: 600;
 	color: #fff;
 	border-radius: 5px;
 	/* resize: both;
