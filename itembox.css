@@ -119,45 +119,45 @@ body { background-color: #222; color: #e6e6e6}
 }
 
 .itembox.normal {
-	background-image: var(--background-color-normal);
+	background: var(--background-color-normal);
 	border: 2px solid var(--border-color-normal);
 }
 .itembox.rare {
-	background-image: var(--background-color-rare);
+	background: var(--background-color-rare);
 	border: 2px solid var(--border-color-rare);
 }
 .itembox.unique {
-	background-image: var(--background-color-unique);
+	background: var(--background-color-unique);
 	border: 2px solid var(--border-color-unique);
 }
 .itembox.legend {
-	background-image: var(--background-color-legend);
+	background: var(--background-color-legend);
 	border: 2px solid var(--border-color-legend);
 }
 .itembox.epic {
-	background-image: var(--background-color-epic);
+	background: var(--background-color-epic);
 	border: 2px solid var(--border-color-epic);
 }
 .itembox.curse {
-	background-image: var(--background-color-curse);
+	background: var(--background-color-curse);
 	border: 2px solid var(--border-color-curse);
 }
 .itembox.costume {
-	background-image: var(--background-color-costume);
+	background: var(--background-color-costume);
 	border: 2px solid var(--border-color-costume);
 }
 .itembox.special {
-	background-image: var(--background-color-special), var(--border-color-special);
+	background: var(--background-color-special), var(--border-color-special);
 	background-clip: content-box, border-box;
 	padding: 2px;
 }
 .itembox.exclusive {
-	background-image: var(--background-color-exclusive), var(--border-color-exclusive);
+	background: var(--background-color-exclusive), var(--border-color-exclusive);
 	background-clip: content-box, border-box;
 	padding: 2px;
 }
 .itembox.sc {
-	background-image: var(--background-color-sc), var(--border-color-sc);
+	background: var(--background-color-sc), var(--border-color-sc);
 	background-clip: content-box, border-box;
 	padding: 2px;
 }
