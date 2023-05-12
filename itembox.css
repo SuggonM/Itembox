@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Nanum+Gothic:wght@700&display=swap');
+@font-face {
+	/* font-family: Migu; */
+	/* src: url(/assets/migu-1p-bold.ttf); */
+	/* src: url(/assets/NanumGothicBold.otf); */
+	/* src: url(/assets/NotoSans-SemiBold.ttf); */
+ }
 
 body { background-color: #222; color: #e6e6e6}
 
