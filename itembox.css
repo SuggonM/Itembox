@@ -173,3 +173,7 @@ body { background-color: #222; color: #e6e6e6}
 .itembox img[src*="mall"] {
 	scale: 1.25;
 }
+
+.itembox.dark {
+	filter: brightness(0.5);
+}
