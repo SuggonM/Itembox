@@ -149,17 +149,18 @@ body { background-color: #222; color: #e6e6e6}
 .itembox.special {
 	background: var(--background-color-special), var(--border-color-special);
 	background-clip: content-box, border-box;
-	padding: 2px;
 }
 .itembox.exclusive {
 	background: var(--background-color-exclusive), var(--border-color-exclusive);
 	background-clip: content-box, border-box;
-	padding: 2px;
 }
 .itembox.sc {
 	background: var(--background-color-sc), var(--border-color-sc);
 	background-clip: content-box, border-box;
+}
+.itembox:is(.special, .exclusive, .sc) {
 	padding: 2px;
+	border: 0;
 }
 .itembox:hover {
 	background: var(--background-color-hover);
