@@ -4,7 +4,13 @@
 	}
 }
 
-.itembox:hover:after {
+@keyframes flicker {
+	from {
+		opacity: 0;
+	}
+}
+	
+.itembox.itemSelect:hover:after {
 	content: '';
 	position: absolute;
 	z-index: 1;
@@ -12,6 +18,21 @@
 	clip-path: polygon(0% 20%, 20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 100%, 100% 100%, 100% 0%, 0% 0%);
 	border-radius: 5px;
 	inset: -2px; /* bg size extended to border-box */
-	animation: ItemSelect .2s linear infinite alternate-reverse;
 	animation: itemSelect .2s linear infinite alternate;
+}
+
+.itembox.flicker:hover:before {
+	content: '';
+	position: absolute;
+	background: var(--background-color-hover);
+	border: 2px solid var(--border-color-hover);
+	border-radius: 5px;
+	inset: -2px;
+	animation: flicker .5s infinite alternate;
+}
+.itembox.flicker:is(.special, .exclusive, .sc):hover:before {
+	inset: 0;
+}
+.itembox.flicker .item {
+	isolation: isolate;
 }
