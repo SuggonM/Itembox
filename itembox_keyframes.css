@@ -1,4 +1,4 @@
-@keyframes ItemSelect {
+@keyframes itemSelect {
 	to {
 		scale: 1.25;
 	}
@@ -13,4 +13,5 @@
 	border-radius: 5px;
 	inset: -2px; /* bg size extended to border-box */
 	animation: ItemSelect .2s linear infinite alternate-reverse;
+	animation: itemSelect .2s linear infinite alternate;
 }
