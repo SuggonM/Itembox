@@ -149,19 +149,20 @@ body { background-color: #222; color: #e6e6e6}
 	border: 2px solid var(--border-color-costume);
 }
 .itembox.special {
-	background: var(--background-color-special), var(--border-color-special);
-	background-clip: content-box, border-box;
+	background: var(--background-color-special),
+				var(--border-color-special);
 }
 .itembox.exclusive {
-	background: var(--background-color-exclusive), var(--border-color-exclusive);
-	background-clip: content-box, border-box;
+	background: var(--background-color-exclusive),
+				var(--border-color-exclusive);
 }
 .itembox.sc {
-	background: var(--background-color-sc), var(--border-color-sc);
-	background-clip: content-box, border-box;
+	background: var(--background-color-sc),
+				var(--border-color-sc);
 }
 .itembox:is(.special, .exclusive, .sc) {
-	padding: 2px; /* creates gradient border */
+	background-clip: content-box, border-box; /* creates gradient border */
+	padding: 2px; /* width of gradient border */
 	border: 0; /* disables default border */
 }
 
