@@ -14,8 +14,11 @@
 	content: '';
 	position: absolute;
 	z-index: 1;
-	background: #fff;
-	clip-path: polygon(0% 20%, 20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 100%, 100% 100%, 100% 0%, 0% 0%);
+	background: 
+        linear-gradient( 45deg, #fff 10%, transparent 10%, transparent 90%, #fff 90%),
+        linear-gradient(-45deg, #fff 10%, transparent 10%, transparent 90%, #fff 90%);
+	/* background: #fff;
+	clip-path: polygon(0% 20%, 20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 100%, 100% 100%, 100% 0%, 0% 0%); */
 	border-radius: 5px;
 	inset: -2px;
 	animation: itemSelect .2s linear infinite alternate;
