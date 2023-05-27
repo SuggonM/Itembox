@@ -190,3 +190,8 @@ body { background-color: #222; color: #e6e6e6}
 .itembox.dark {
 	filter: brightness(0.5);
 }
+
+.itembox.no-bg {
+	background: none !important;
+}
+}
