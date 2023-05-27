@@ -65,7 +65,15 @@ body { background-color: #222; color: #e6e6e6}
 }
 
 .itembox .item {
-	place-self: center; /* placed center */
+	position: relative;
+	overflow: hidden;
+	border-radius: 3px; /* inner border-radius */
+}
+
+.itembox .item a, .itembox .item img {
+	position: absolute;
+	inset: 0; /* span entire box */
+	margin: auto; /* center the item */
 }
 
 .itembox .item img {
