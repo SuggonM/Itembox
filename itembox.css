@@ -198,4 +198,17 @@ body { background-color: #222; color: #e6e6e6}
 .itembox.mini, .itembox.mini + .itembox-caption {
 	zoom: .7;
 }
+
+.itembox .new { /* unavailable image */
+	font-size: 0; /* hide the redlink */
+	user-select: none;
+}
+.item .new:before {
+	content: '?';
+	position: absolute;
+	inset: 15% 30%;
+	font-size: 50px;
+	line-height: 1;
+	color: #fff;
+	font-family: 'Gyeonggi';
 }
