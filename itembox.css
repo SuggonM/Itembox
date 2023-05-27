@@ -194,4 +194,8 @@ body { background-color: #222; color: #e6e6e6}
 .itembox.no-bg {
 	background: none !important;
 }
+
+.itembox.mini, .itembox.mini + .itembox-caption {
+	zoom: .7;
+}
 }
