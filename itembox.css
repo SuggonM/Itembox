@@ -24,10 +24,10 @@ body { background-color: #222; color: #e6e6e6}
 	border-radius: 5px;
 	/* resize: both;
 	overflow: hidden; */
-	position: relative; /* pseudo-classes have position: absolute */
+	position: relative;
 	vertical-align: middle;
 	line-height: initial; /* initializing site's line-height: 1.75 */
-	box-sizing: initial;  /* initializing site's box-padding: content-box */
+	box-sizing: initial; /* initializing site's box-sizing: border-box */
 }
 
 .itembox > div { /* all children of itembox */
@@ -36,7 +36,7 @@ body { background-color: #222; color: #e6e6e6}
 
 .itembox > :not(.item) { /* all children except the item */
 	z-index: 1; /* overlay on the item */
-	position: relative; /* to position them correctly */
+	position: relative; /* position them correctly */
 }
 
 .itembox > :not(.item) img { /* all images except the item */
@@ -89,14 +89,14 @@ body { background-color: #222; color: #e6e6e6}
 	bottom: -5px; /* pull downward */
 }
 
-.itembox .exclusive-icon { /* kama, bari & mayreel artifacts */
+.itembox .exclusive-icon { /* icon for exclusive artifact */
 	place-self: end; /* placed bottom-right */
 	bottom: -5px; /* pull downward */
 	right: -4px; /* pull rightward */
 }
 
 .itembox .exclusive-icon img {
-	height: 22px; /* size of exclusive arti icon */
+	height: 22px;
 }
 
 .itembox .level, .itembox .amount {
