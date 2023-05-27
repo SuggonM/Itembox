@@ -33,9 +33,6 @@
 	inset: -2px;
 	animation: flicker .5s infinite alternate;
 }
-.itembox.flicker:is(.special, .exclusive, .sc):hover:before {
-	inset: 0;
-}
 .itembox.flicker .item {
 	isolation: isolate; /* isolates pseudo-class behind the item */
 }

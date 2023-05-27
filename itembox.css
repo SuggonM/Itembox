@@ -21,8 +21,6 @@ body { background-color: #222; color: #e6e6e6}
 	font-size: 12px;
 	font-weight: 600;
 	color: #fff;
-	background: var(--background-color-general);
-	border: 2px solid var(--border-color-general);
 	border-radius: 5px;
 	/* resize: both;
 	overflow: hidden; */
@@ -71,8 +69,8 @@ body { background-color: #222; color: #e6e6e6}
 }
 
 .itembox .item img {
-	max-width: 64px;
-	max-height: 64px;
+	max-width: 100%;
+	max-height: 100%;
 	image-rendering: pixelated;
 	cursor: pointer;
 }
@@ -122,57 +120,57 @@ body { background-color: #222; color: #e6e6e6}
 	overflow-wrap: break-word;
 }
 
-/* themes for different rarities */
+/* itembox themes */
+.itembox {
+	background-image: var(--background-color-general),
+		linear-gradient(var(--border-color-general), var(--border-color-general));
+	background-clip: content-box, padding-box; /* creates gradient border */
+	padding: 2px; /* width of gradient border */
+}
 .itembox.normal {
-	background: var(--background-color-normal);
-	border: 2px solid var(--border-color-normal);
+	background-image: var(--background-color-normal),
+		linear-gradient(var(--border-color-normal), var(--border-color-normal));
 }
 .itembox.rare {
-	background: var(--background-color-rare);
-	border: 2px solid var(--border-color-rare);
+	background-image: var(--background-color-rare),
+		linear-gradient(var(--border-color-rare), var(--border-color-rare));
 }
 .itembox.unique {
-	background: var(--background-color-unique);
-	border: 2px solid var(--border-color-unique);
+	background-image: var(--background-color-unique),
+		linear-gradient(var(--border-color-unique), var(--border-color-unique));
 }
 .itembox.legend {
-	background: var(--background-color-legend);
-	border: 2px solid var(--border-color-legend);
+	background-image: var(--background-color-legend),
+		linear-gradient(var(--border-color-legend), var(--border-color-legend));
 }
 .itembox.epic {
-	background: var(--background-color-epic);
-	border: 2px solid var(--border-color-epic);
+	background-image: var(--background-color-epic),
+		linear-gradient(var(--border-color-epic), var(--border-color-epic));
 }
 .itembox.curse {
-	background: var(--background-color-curse);
-	border: 2px solid var(--border-color-curse);
+	background-image: var(--background-color-curse),
+		linear-gradient(var(--border-color-curse), var(--border-color-curse));
 }
 .itembox.costume {
-	background: var(--background-color-costume);
-	border: 2px solid var(--border-color-costume);
+	background-image: var(--background-color-costume),
+		linear-gradient(var(--border-color-costume), var(--border-color-costume));
 }
 .itembox.special {
-	background: var(--background-color-special),
-				var(--border-color-special);
+	background-image: var(--background-color-special),
+		var(--border-color-special);
 }
 .itembox.exclusive {
-	background: var(--background-color-exclusive),
-				var(--border-color-exclusive);
+	background-image: var(--background-color-exclusive),
+		var(--border-color-exclusive);
 }
 .itembox.sc {
-	background: var(--background-color-sc),
-				var(--border-color-sc);
-}
-.itembox:is(.special, .exclusive, .sc) {
-	background-clip: content-box, border-box; /* creates gradient border */
-	padding: 2px; /* width of gradient border */
-	border: 0; /* disables default border */
+	background-image: var(--background-color-sc),
+		var(--border-color-sc);
 }
 
 .itembox:not(.flicker):hover {
-	background: var(--background-color-hover);
-	border: 2px solid var(--border-color-hover);
-	padding: 0;
+	background-image: linear-gradient(var(--background-color-hover), var(--background-color-hover)),
+		linear-gradient(var(--border-color-hover), var(--border-color-hover));
 }
 
 /* ---- miscellaneous ---- */
