@@ -103,7 +103,7 @@ body { background-color: #222; color: #e6e6e6}
 .itembox .level, .itembox .amount {
 	overflow: hidden; /* disallow spam */
 	max-width: 100%; /* ^ */
-	white-space: nowrap; /* ^ */
+	text-overflow: ellipsis; /* ^ */
 	padding-inline: 1px;
 	filter: 
 	drop-shadow(   0px -0.5px 0.2px #000)
