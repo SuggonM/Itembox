@@ -6,6 +6,10 @@
 	/* src: url(/assets/NotoSans-SemiBold.ttf); */
 	/* src: url(/assets/HanWangHei-Heavy.ttf); */
  }
+ @font-face {
+	font-family: Gyeonggi;
+	src: url(/assets/GyeonggiTitleV.woff2);
+ }
 
 body { background-color: #222; color: #e6e6e6}
 
@@ -13,7 +17,7 @@ body { background-color: #222; color: #e6e6e6}
 	display: inline-grid;
 	width: 64px;
 	height: 64px;
-	font-family: Noto Sans;
+	font-family: 'Noto Sans';
 	font-size: 12px;
 	font-weight: 600;
 	color: #fff;
@@ -44,11 +48,6 @@ body { background-color: #222; color: #e6e6e6}
 
 .itembox .level {
 	place-self: start; /* placed top-left */
-	top: -3px; /* pull upward */
-}
-
-.itembox .level > span {
-	vertical-align: middle; /* font-size variation middle-aligned */
 }
 
 .itembox .level-text {
@@ -103,7 +102,11 @@ body { background-color: #222; color: #e6e6e6}
 	drop-shadow(   0px -0.5px 0.2px #000)
 	drop-shadow(   1px    0px 0.2px #000)
 	drop-shadow(   0px    1px 0.2px #000)
-	drop-shadow(-0.5px    0px 0.2px #000); /* consistent text-outline */
+	drop-shadow(-0.5px    0px 0.2px #000); /* text-outline */
+}
+
+.itembox .level-number, .itembox .amount {
+	font-family: 'Gyeonggi'; /* font for numeric characters */
 }
 
 .itembox-container { /* wrapper for itembox and its caption */
