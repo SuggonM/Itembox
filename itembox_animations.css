@@ -30,8 +30,10 @@
 
 .itembox.flicker:hover:before {
 	content: '';
-	background: var(--background-color-hover);
-	border: 2px solid var(--border-color-hover);
+	background-image: linear-gradient(var(--background-color-hover), var(--background-color-hover)),
+		linear-gradient(var(--border-color-hover), var(--border-color-hover));
+	background-clip: content-box, padding-box;
+	padding: 2px;
 	animation: flicker .5s infinite alternate;
 }
 .itembox.flicker .item {
