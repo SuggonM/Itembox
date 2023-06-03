@@ -106,11 +106,7 @@ body { background-color: #222; color: #e6e6e6}
 	max-width: 100%; /* ^ */
 	text-overflow: ellipsis; /* ^ */
 	padding-inline: 1px;
-	filter: 
-	drop-shadow(   0px -0.5px 0.2px #000)
-	drop-shadow(   1px    0px 0.2px #000)
-	drop-shadow(   0px    1px 0.2px #000)
-	drop-shadow(-0.5px    0px 0.2px #000); /* text-outline */
+	filter: var(--outline); /* text-outline */
 }
 
 .itembox .level-number, .itembox .amount {
@@ -212,4 +208,14 @@ body { background-color: #222; color: #e6e6e6}
 	line-height: 1;
 	color: #fff;
 	font-family: 'Gyeonggi';
+	filter: var(--outline);
 }
+
+:root {
+	--outline: 
+	drop-shadow(   0px -0.5px 0.2px #000)
+	drop-shadow(   1px    0px 0.2px #000)
+	drop-shadow(   0px    1px 0.2px #000)
+	drop-shadow(-0.5px    0px 0.2px #000);
+}
+
