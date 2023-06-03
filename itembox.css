@@ -180,10 +180,6 @@ body { background-color: #222; color: #e6e6e6}
 }
 
 /* ---- miscellaneous ---- */
-.itembox img[src*="mall"] {
-	scale: 1.25;
-}
-
 .itembox.dark {
 	filter: brightness(0.5);
 }
@@ -219,3 +215,5 @@ body { background-color: #222; color: #e6e6e6}
 	drop-shadow(-0.5px    0px 0.2px #000);
 }
 
+.itembox.upscale .item img { scale: 1.25; }
+.itembox.downscale .item img { scale: 0.75; }
