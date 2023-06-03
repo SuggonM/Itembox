@@ -196,11 +196,11 @@ body { background-color: #222; color: #e6e6e6}
 	zoom: .7;
 }
 
-.itembox .new { /* unavailable image */
+.itembox .item .new { /* unavailable image */
 	font-size: 0; /* hide the redlink */
 	user-select: none;
 }
-.item .new:before {
+.itembox .item .new:before {
 	content: '?';
 	position: absolute;
 	inset: 15% 30%;
