@@ -119,6 +119,7 @@ body { background-color: #222; color: #e6e6e6}
 	align-items: center;
 	vertical-align: top;
 	gap: 3px;
+	margin-bottom: 3px; /* prevent scrollbar at page end */
 }
 
 .itembox-caption {
@@ -127,7 +128,7 @@ body { background-color: #222; color: #e6e6e6}
 	text-align: center;
 	line-height: 1;
 	font-size: 12px;
-	margin-bottom: 3px; /* prevent scrollbar at page end */
+	font-weight: 500;
 }
 
 /* itembox themes */
