@@ -191,6 +191,10 @@ body { background-color: #222; color: #e6e6e6}
 	background: none !important;
 }
 
+.itembox.unpixelate .item img{
+	image-rendering: auto;
+}
+
 .itembox.mini, .itembox.mini + .itembox-caption {
 	zoom: .7;
 }
