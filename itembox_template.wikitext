@@ -1,4 +1,4 @@
-<noinclude>{{Item|Liberator|type=Weapon|rarity=Epic|grade=5|level=92|banner1=ExWeapon|banner2=Collection|caption=[[Liberator]]}}</noinclude>
+<noinclude>{{Item|Liberator|type=Weapon|rarity=Epic|grade=5|level=89|banner1=ExWeapon|banner2=Collection|caption=[[Liberator]]}}</noinclude>
 
 <includeonly>
 {{#if: {{{caption|}}} |
@@ -31,8 +31,8 @@
 		</{{{scope|div}}}>
 	}}
 	{{#ifeq: {{{rarity}}} | exclusive |
-		<{{{scope|div}}} class="exclusive-icon">
-			[[File:Icon Banner Exclusive.png]]
+		<{{{scope|div}}} class="exclusive-banner">
+			[[File:Icon Banner Exclusive Artifact.png]]
 		</{{{scope|div}}}>
 	}}
 </{{{scope|div}}}>

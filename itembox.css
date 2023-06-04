@@ -92,13 +92,13 @@ body { background-color: #222; color: #e6e6e6}
 	bottom: -5px; /* pull downward */
 }
 
-.itembox .exclusive-icon { /* icon for exclusive artifact */
+.itembox .exclusive-banner { /* icon for exclusive artifact */
 	place-self: end; /* placed bottom-right */
 	bottom: -5px; /* pull downward */
 	right: -4px; /* pull rightward */
 }
 
-.itembox .exclusive-icon img {
+.itembox .exclusive-banner img {
 	height: 22px;
 }
 
