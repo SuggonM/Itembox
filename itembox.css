@@ -189,14 +189,11 @@ body { background-color: #222; color: #e6e6e6}
 	filter: brightness(0.5);
 }
 
-.itembox.no-bg {
-	background: none !important;
-}
-.itembox.no-bg:before, .itembox.no-bg:after {
+.itembox.no-bg, .itembox.no-bg:before, .itembox.no-bg:after {
 	background: none !important;
 }
 
-.itembox.unpixelate .item img{
+.itembox.unpixelated .item img{
 	image-rendering: auto;
 }
 
@@ -227,5 +224,5 @@ body { background-color: #222; color: #e6e6e6}
 	drop-shadow(-0.5px    0px 0.2px #000);
 }
 
-.itembox.upscale .item img { scale: 1.25; }
-.itembox.downscale .item img { scale: 0.75; }
+.itembox.upscaled .item img { scale: 1.25; }
+.itembox.downscaled .item img { scale: 0.75; }
