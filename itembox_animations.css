@@ -37,5 +37,5 @@
 	animation: flicker .5s infinite alternate;
 }
 .itembox.flicker .item {
-	isolation: isolate; /* isolates pseudo-class behind the item */
+	isolation: isolate; /* isolate pseudo-class behind the item */
 }
