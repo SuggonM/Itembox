@@ -27,9 +27,10 @@ body { background-color: #222; color: #e6e6e6}
 	vertical-align: middle;
 	line-height: initial; /* initialize site's line-height: 1.75 */
 	box-sizing: initial; /* initialize site's box-sizing: border-box */
+	margin-bottom: 3px; /* prevent scrollbar at page end */
 }
 
-.itembox > div { /* all children of itembox */
+.itembox > * { /* all children of itembox */
 	grid-area: 1/1; /* forced into single cell to enable overlapping */
 }
 
@@ -119,7 +120,6 @@ body { background-color: #222; color: #e6e6e6}
 	flex-direction: column;
 	align-items: center;
 	vertical-align: top;
-	gap: 3px;
 	margin-bottom: 3px; /* prevent scrollbar at page end */
 }
 
@@ -195,16 +195,17 @@ body { background-color: #222; color: #e6e6e6}
 	background: none !important;
 }
 
-.itembox.unpixelated .item img{
+.itembox.unpixelated .item img {
 	image-rendering: auto;
 }
 
 .itembox.mini, .itembox.mini + .itembox-caption {
-	zoom: .7;
+	zoom: 0.75;
 }
 
-.itembox .item .new { /* unavailable image */
-	font-size: 0; /* hide the redlink */
+/* replace unavailable image */
+.itembox .item .new {
+	font-size: 0;
 	user-select: none;
 }
 .itembox .item .new:before {
