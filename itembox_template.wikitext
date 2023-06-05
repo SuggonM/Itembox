@@ -1,45 +1,40 @@
 <noinclude>{{Item|Liberator|type=Weapon|rarity=Epic|grade=5|level=89|banner1=ExWeapon|banner2=Collection|caption=[[Liberator]]}}</noinclude>
 
-<includeonly>
-{{#if: {{{caption|}}} |
+<includeonly><!--
+-->{{#if: {{{caption|}}} |
 <{{{scope|div}}} class="itembox-container">
-}}
-<{{{scope|div}}} class="itembox {{{rarity|general}}}">
-	{{#if: {{{level|}}} |
-		<{{{scope|div}}} class="level">
-			<span class="level-text">Lv.</span><span class="level-number">{{{level}}}</span>
+}}<!--
+--><{{{scope|div}}} class="itembox {{lc:{{{rarity|}}}}} {{{class|}}} {{{animation|}}}"><!--
+	-->{{#if: {{{level|}}} |
+		<{{{scope|div}}} class="level" aria-hidden="true"><!--
+			--><span class="level-text">Lv.</span><span class="level-number">{{{level}}}</span>
 		</{{{scope|div}}}>
-	}}
-	{{#if: {{{banner|{{{banner1|}}}}}} |
-		<{{{scope|div}}} class="banner">
-			[[File:Icon Banner {{{banner1|{{{banner}}}}}}.png]]{{#if: {{{banner2|}}} | [[File:Icon Banner {{{banner2}}}.png]] }}
+		}}<!--
+	-->{{#if: {{{banner|{{{banner1|}}}}}} |
+		<{{{scope|div}}} class="banner" aria-hidden="true"><!--
+			-->[[File:Icon Banner {{{banner1|{{{banner}}}}}}.png|link=]]{{#if: {{{banner2|}}} | [[File:Icon Banner {{{banner2}}}.png|link=]] }}
 		</{{{scope|div}}}>
-	}}
-	{{#if: {{{1|{{{file|}}} |
-		<{{{scope|div}}} class="item" {{#if: {{{item-height|{{{item-scale|}}}}}} | style="{{#if: {{{item-height|}}} | --height: {{{item-height}}}; }} {{#if: {{{item-scale|}}} | scale: {{{item-scale}}}; }}">
-			{{{file|[[File:{{{type|}}} {{{1|}}}.png]]}}}
+		}}<!--
+	-->{{#if: {{{1|{{{file|}}}}}} |
+		<{{{scope|div}}} class="item"><!--
+			-->{{{file|[[File:{{{type|}}} {{{1|}}}.png|alt={{{alt|<!-- auto-generated alt -->{{{amount|}}} {{{1|}}} {{#if: {{{level|{{{grade|{{{rarity|}}}}}}}}} | ( {{#if: {{{level|}}} | Level {{{level}}} }} {{#if: {{{grade|}}} | Grade {{{grade|}}} }} {{{rarity|}}} ) }} <!-- /auto-generated alt -->}}}]]}}}
 		</{{{scope|div}}}>
-	}}
-	{{#if: {{{grade|}}} |
-		<{{{scope|div}}} class="grade">
-			[[File:Icon EquipStar {{{rarity}}} {{{grade}}}.png]]
+		}}<!--
+	-->{{#if: {{{grade|}}} |
+		<{{{scope|div}}} class="grade" aria-hidden="true"><!--
+			-->[[File:Icon EquipStar {{{rarity}}} {{{grade}}}.png|link=]]
 		</{{{scope|div}}}>
-	}}
-	{{#if: {{{amount|}}} |
-		<{{{scope|div}}} class="amount">
-			{{{amount}}}
+		}}<!--
+	-->{{#if: {{{amount|}}} |
+		<{{{scope|div}}} class="amount" aria-hidden="true">{{{amount}}}</{{{scope|div}}}>
+		}}<!--
+	-->{{#ifeq: {{{rarity}}} | Exclusive |
+		<{{{scope|div}}} class="exclusive-banner" aria-hidden="true"><!--
+			-->[[File:Icon Banner Exclusive Artifact.png|link=]]
 		</{{{scope|div}}}>
-	}}
-	{{#ifeq: {{{rarity}}} | exclusive |
-		<{{{scope|div}}} class="exclusive-banner">
-			[[File:Icon Banner Exclusive Artifact.png]]
-		</{{{scope|div}}}>
-	}}
+		}}
+</{{{scope|div}}}><!--
+-->{{#if: {{{caption|}}} |
+<{{{scope|div}}} class="itembox-caption">{{{caption}}}</{{{scope|div}}}>
 </{{{scope|div}}}>
-{{#if: {{{caption|}}} |
-<{{{scope|div}}} class="itembox-caption">
-	{{{caption}}}
-</{{{scope|div}}}>
-</{{{scope|div}}}>
-}}
-</includeonly>
+}}</includeonly><noinclude>{{Documentation}}</noinclude>
