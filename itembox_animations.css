@@ -1,4 +1,4 @@
-@keyframes itemSelect {
+@keyframes itemselect {
 	to {
 		scale: 1.25;
 	}
@@ -17,7 +17,7 @@
 	pointer-events: none;
 }
 
-.itembox.itemSelect:hover:after {
+.itembox.itemselect:hover:after {
 	content: '';
 	z-index: 1;
 	/* background-image: 
@@ -25,7 +25,7 @@
         linear-gradient(-45deg, #fff 10%, transparent 10%, transparent 90%, #fff 90%); */
 	background-color: #fff;
 	clip-path: polygon(0% 20%, 20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 100%, 100% 100%, 100% 0%, 0% 0%);
-	animation: itemSelect .2s linear infinite alternate;
+	animation: itemselect .2s linear infinite alternate;
 }
 
 .itembox.flicker:hover:before {
