@@ -229,3 +229,14 @@ body { background-color: #222; color: #e6e6e6}
 
 .itembox.upscaled .item img { scale: 1.25; }
 .itembox.downscaled .item img { scale: 0.75; }
+
+/* mobile-specific fixes */
+.skin-fandommobile .itembox .banner a + a {
+	margin-left: -4px;
+}
+
+.skin-fandommobile .itembox .item img {
+	width: auto;
+	border: none;
+	border-radius: 0;
+}
