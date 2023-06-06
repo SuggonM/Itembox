@@ -2,39 +2,61 @@
 
 <includeonly><!--
 -->{{#if: {{{caption|}}} |
-<{{{scope|div}}} class="itembox-container">
+<div class="itembox-container {{{container-class|}}}">
 }}<!--
---><{{{scope|div}}} class="itembox {{lc:{{{rarity|}}}}} {{{class|}}} {{{animation|}}}"><!--
-	-->{{#if: {{{level|}}} |
-		<{{{scope|div}}} class="level" aria-hidden="true"><!--
+--><div class="itembox {{lc: {{{rarity|}}} {{{class|}}} {{{animation|}}} }}"><!--#
+
+	#### Elements of Itembox ####
+
+	#-->{{#if: {{{level|}}} |
+		<div class="level" aria-hidden="true"><!--
 			--><span class="level-text">Lv.</span><span class="level-number">{{{level}}}</span>
-		</{{{scope|div}}}>
-		}}<!--
-	-->{{#if: {{{banner|{{{banner1|}}}}}} |
-		<{{{scope|div}}} class="banner" aria-hidden="true"><!--
+		</div>
+		}}<!--#
+
+	#-->{{#if: {{{banner|{{{banner1|}}}}}} |
+		<div class="banner" aria-hidden="true"><!--
 			-->[[File:Icon Banner {{{banner1|{{{banner}}}}}}.png|link=]]{{#if: {{{banner2|}}} | [[File:Icon Banner {{{banner2}}}.png|link=]] }}
-		</{{{scope|div}}}>
-		}}<!--
-	-->{{#if: {{{1|{{{file|}}}}}} |
-		<{{{scope|div}}} class="item"><!--
-			-->{{{file|[[File:{{{type|}}} {{{1|}}}.png|alt={{{alt|<!-- auto-generated alt -->{{{amount|}}} {{{1|}}} {{#if: {{{level|{{{grade|{{{rarity|}}}}}}}}} | ( {{#if: {{{level|}}} | Level {{{level}}} }} {{#if: {{{grade|}}} | Grade {{{grade|}}} }} {{{rarity|}}} ) }} <!-- /auto-generated alt -->}}}]]}}}
-		</{{{scope|div}}}>
-		}}<!--
-	-->{{#if: {{{grade|}}} |
-		<{{{scope|div}}} class="grade" aria-hidden="true"><!--
-			-->[[File:Icon EquipStar {{{rarity}}} {{{grade}}}.png|link=]]
-		</{{{scope|div}}}>
-		}}<!--
-	-->{{#if: {{{amount|}}} |
-		<{{{scope|div}}} class="amount" aria-hidden="true">{{{amount}}}</{{{scope|div}}}>
-		}}<!--
-	-->{{#ifeq: {{{rarity}}} | Exclusive |
-		<{{{scope|div}}} class="exclusive-banner" aria-hidden="true"><!--
+		</div>
+		}}<!--#
+
+	#-->{{#if: {{{1|{{{file|}}}}}} |
+		<div class="item"><!--
+			-->{{#if: {{{smallicon|}}}<!--
+
+				---- smallicon passed; use different markup for desktop and mobile ----
+
+				-->|{{#ifeq: {{IsDesktop}} | desktop<!--
+					---- desktop skin ----
+					-->|[[File:{{{type|}}} {{{1|}}}.png|{{#if: {{{link|}}} | link={{{link}}} }}|alt={{{alt|<!-- auto-generated alt -->{{{amount|}}} {{{1|}}} {{#if: {{{level|{{{grade|{{{rarity|}}}}}}}}} | ({{#sub: <!--trim whitespace and last comma-->{{#if:{{{level|}}}|Level {{{level}}},}} {{#if:{{{grade|}}}|Grade {{{grade|}}},}} {{#if:{{{rarity|}}}|{{ucfirst:{{{rarity|}}}}},}} | 0 | -1 }}) }} <!-- /auto-generated alt -->}}}]]<!--
+					---- mobile skin ----
+					-->|{{#tag: gallery | {{{type|}}} {{{1|}}}.png{{!}}{{#if: {{{link|}}} | link={{{link}}} }}{{!}}alt={{{alt|<!-- auto-generated alt -->{{{amount|}}} {{{1|}}} {{#if: {{{level|{{{grade|{{{rarity|}}}}}}}}} | ({{#sub: {{#if:{{{level|}}}|Level {{{level}}},}} {{#if:{{{grade|}}}|Grade {{{grade|}}},}} {{#if:{{{rarity|}}}|{{ucfirst:{{{rarity|}}}}},}} | 0 | -1 }}) }} <!-- /auto-generated alt -->}}}}}<!--
+				-->}}<!--
+
+				---- smallicon not passed; use single markup ----
+
+				-->|{{{file|[[File:{{{type|}}} {{{1|}}}.png|{{#if: {{{link|}}} | link={{{link}}} }}|alt={{{alt|<!-- auto-generated alt -->{{{amount|}}} {{{1|}}} {{#if: {{{level|{{{grade|{{{rarity|}}}}}}}}} | ({{#sub: {{#if:{{{level|}}}|Level {{{level}}},}} {{#if:{{{grade|}}}|Grade {{{grade|}}},}} {{#if:{{{rarity|}}}|{{ucfirst:{{{rarity|}}}}},}} | 0 | -1 }}) }} <!-- /auto-generated alt -->}}}]]}}}<!--
+			-->}}
+		</div>
+		}}<!--#
+
+	#-->{{#if: {{{grade|}}} |
+		<div class="grade" aria-hidden="true"><!--
+			-->[[File:Icon EquipStar {{ucfirst:{{{rarity|}}}}} {{{grade}}}.png|link=]]
+		</div>
+		}}<!--#
+
+	#-->{{#if: {{{amount|}}} |
+		<div class="amount" aria-hidden="true">{{{amount}}}</div>
+		}}<!--#
+
+	#-->{{#ifeq: {{lc:{{{rarity|}}}}} | exclusive |
+		<div class="exclusive-banner" aria-hidden="true"><!--
 			-->[[File:Icon Banner Exclusive Artifact.png|link=]]
-		</{{{scope|div}}}>
+		</div>
 		}}
-</{{{scope|div}}}><!--
+</div><!--
 -->{{#if: {{{caption|}}} |
-<{{{scope|div}}} class="itembox-caption">{{{caption}}}</{{{scope|div}}}>
-</{{{scope|div}}}>
+<div class="itembox-caption">{{{caption}}}</div>
+</div>
 }}</includeonly><noinclude>{{Documentation}}</noinclude>
