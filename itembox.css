@@ -203,6 +203,10 @@ body { background-color: #222; color: #e6e6e6}
 	zoom: 0.75;
 }
 
+.itembox-container.align-middle {
+	vertical-align: middle;
+}
+
 /* replace unavailable image */
 .itembox .item .new {
 	font-size: 0;
