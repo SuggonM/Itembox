@@ -55,6 +55,7 @@
 			-->[[File:Icon Banner Exclusive Artifact.png|link=]]
 		</div>
 		}}
+
 </div><!--
 -->{{#if: {{{caption|}}} |
 <div class="itembox-caption">{{{caption}}}</div>
