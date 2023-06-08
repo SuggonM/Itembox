@@ -4,19 +4,19 @@
 -->{{#if: {{{caption|}}} |
 <div class="itembox-container {{{container-class|}}}">
 }}<!--
---><div class="itembox {{lc: {{{rarity|}}} {{{class|}}} {{{animation|}}} }}"><!--#
+--><div class="itembox {{lc: {{{rarity|}}} }} {{{class|}}} {{{animation|}}}"><!--#
 
 	#### Elements of Itembox ####
 
 	#-->{{#if: {{{level|}}} |
-		<div class="level" aria-hidden="true"><!--
+		<div class="level" data-nosnippet aria-hidden="true"><!--
 			--><span class="level-text">Lv.</span><span class="level-number">{{{level}}}</span>
 		</div>
 		}}<!--#
 
 	#-->{{#if: {{{banner|{{{banner1|}}}}}} |
-		<div class="banner" aria-hidden="true"><!--
-			-->[[File:Icon Banner {{{banner1|{{{banner}}}}}}.png|link=]]{{#if: {{{banner2|}}} | [[File:Icon Banner {{{banner2}}}.png|link=]] }}
+		<div class="banner" data-nosnippet aria-hidden="true"><!--
+			-->[[File:Icon Banner {{{banner|{{{banner1}}}}}}.png|alt=Banner|link=]]{{#if: {{{banner2|}}} | [[File:Icon Banner {{{banner2}}}.png|alt=Banner|link=]] }}
 		</div>
 		}}<!--#
 
@@ -41,18 +41,18 @@
 		}}<!--#
 
 	#-->{{#if: {{{grade|}}} |
-		<div class="grade" aria-hidden="true"><!--
-			-->[[File:Icon EquipStar {{ucfirst:{{{rarity|}}}}} {{{grade}}}.png|link=]]
+		<div class="grade" data-nosnippet aria-hidden="true"><!--
+			-->[[File:Icon EquipStar {{{rarity|}}} {{{grade}}}.png|alt=Grade|link=]]
 		</div>
 		}}<!--#
 
 	#-->{{#if: {{{amount|}}} |
-		<div class="amount" aria-hidden="true">{{{amount}}}</div>
+		<div class="amount" data-nosnippet aria-hidden="true">{{{amount}}}</div>
 		}}<!--#
 
-	#-->{{#ifeq: {{lc:{{{rarity|}}}}} | exclusive |
-		<div class="exclusive-banner" aria-hidden="true"><!--
-			-->[[File:Icon Banner Exclusive Artifact.png|link=]]
+	#-->{{#ifeq: {{{{rarity|}}} | Exclusive |
+		<div class="exclusive-banner" data-nosnippet aria-hidden="true"><!--
+			-->[[File:Icon Banner Exclusive Artifact.png|alt=Exclusive Artifact Banner|link=]]
 		</div>
 		}}
 
