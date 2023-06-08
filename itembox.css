@@ -199,6 +199,14 @@ body { background-color: #222; color: #e6e6e6}
 	image-rendering: auto;
 }
 
+.itembox.image-unadjusted .item img {
+	object-fit: none;
+}
+
+.itembox.image-bottom .item img {
+	object-position: bottom;
+}
+
 .itembox.mini, .itembox.mini + .itembox-caption {
 	zoom: 0.75;
 }
