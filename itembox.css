@@ -21,13 +21,13 @@ body { background-color: #222; color: #e6e6e6}
 	font-size: 12px;
 	color: #fff;
 	border-radius: 5px;
+	margin: 2px;
 	/* resize: both;
 	overflow: hidden; */
 	position: relative;
 	vertical-align: middle;
 	line-height: initial; /* initialize site's line-height: 1.75 */
 	box-sizing: initial; /* initialize site's box-sizing: border-box */
-	margin-bottom: 3px; /* prevent scrollbar at page end */
 }
 
 .itembox > * { /* all children of itembox */
@@ -119,8 +119,9 @@ body { background-color: #222; color: #e6e6e6}
 	display: inline-flex;
 	flex-direction: column;
 	align-items: center;
+	gap: 2px; /* gap between itembox and caption */
+	margin: 2px;
 	vertical-align: top;
-	margin-bottom: 3px; /* prevent scrollbar at page end */
 }
 
 .itembox-caption {
@@ -132,7 +133,11 @@ body { background-color: #222; color: #e6e6e6}
 	font-weight: 500;
 }
 
-/* itembox themes */
+.itembox-container .itembox {
+	margin: initial; /* apply margin to outermost layer only */
+}
+
+/* Itembox Themes */
 .itembox {
 	background-image: var(--background-color-general),
 		linear-gradient(var(--border-color-general), var(--border-color-general));
@@ -140,7 +145,7 @@ body { background-color: #222; color: #e6e6e6}
 	padding: 2px; /* width of gradient border */
 }
 
-.itembox.normal {
+.itembox.normal, .itembox.low {
 	background-image: var(--background-color-normal),
 		linear-gradient(var(--border-color-normal), var(--border-color-normal));
 }
@@ -148,7 +153,7 @@ body { background-color: #222; color: #e6e6e6}
 	background-image: var(--background-color-rare),
 		linear-gradient(var(--border-color-rare), var(--border-color-rare));
 }
-.itembox.unique {
+.itembox.unique, .itembox.mid {
 	background-image: var(--background-color-unique),
 		linear-gradient(var(--border-color-unique), var(--border-color-unique));
 }
@@ -156,7 +161,7 @@ body { background-color: #222; color: #e6e6e6}
 	background-image: var(--background-color-legend),
 		linear-gradient(var(--border-color-legend), var(--border-color-legend));
 }
-.itembox.epic {
+.itembox.epic, .itembox.high {
 	background-image: var(--background-color-epic),
 		linear-gradient(var(--border-color-epic), var(--border-color-epic));
 }
@@ -186,7 +191,7 @@ body { background-color: #222; color: #e6e6e6}
 		linear-gradient(var(--border-color-hover), var(--border-color-hover));
 }
 
-/* ---- miscellaneous ---- */
+/* ---- Utility Classes ---- */
 .itembox.dark {
 	filter: brightness(0.5);
 }
@@ -226,7 +231,7 @@ body { background-color: #222; color: #e6e6e6}
 	drop-shadow(-0.5px    0px 0.2px #000);
 }
 
-/* replace unavailable image */
+/* ---- Replace unavailable image ---- */
 .itembox .item .new {
 	font-size: 0;
 	user-select: none;
@@ -242,7 +247,7 @@ body { background-color: #222; color: #e6e6e6}
 	filter: var(--outline);
 }
 
-/* mobile-specific fixes */
+/* ---- Mobile-specific fixes ---- */
 .skin-fandommobile .itembox .banner a + a {
 	margin-left: -4px;
 }
