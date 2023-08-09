@@ -212,7 +212,7 @@ body { background-color: #222; color: #e6e6e6}
 	object-position: bottom;
 }
 
-.itembox.mini, .itembox.mini + .itembox-caption {
+.itembox.mini, .itembox-container:has(.itembox.mini) .itembox-caption {
 	zoom: 0.75;
 }
 
@@ -256,4 +256,30 @@ body { background-color: #222; color: #e6e6e6}
 	width: auto;
 	border: none;
 	border-radius: 0;
+}
+
+/* ---- Itembox Tooltips ---- */
+
+.custom-tooltip .wds-dropdown__toggle .itembox .item a {
+	pointer-events: none; /* deactivate anchored image link */
+}
+
+.custom-tooltip .wds-dropdown__toggle .itembox {
+	cursor: pointer;
+	transition: scale 0.1s;
+}
+
+.custom-tooltip .wds-dropdown__toggle .itembox:focus-within {
+	scale: 0.9;
+}
+
+.custom-tooltip:focus-within {
+	.wds-dropdown__content, &:before, &:after {
+		display: inline-block; /* display tooltip on focus */
+	}
+}
+
+.custom-tooltip.wds-open-to-right .wds-dropdown__content { /* fix misposition */
+	top: 30%;
+}
 }
