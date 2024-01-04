@@ -3,6 +3,8 @@ In order to preview the project, clone the repository directly from GitHub Deskt
 
 Otherwise, download the zip file from the repository code dropdown menu, extract it, and open the .html file (preferably on PC).
 
+A preview of this project has been deployed on https://suggonm.github.io/.
+
 ## Updates
 This repository is for archival purposes as its development site has been moved to the wiki. Please visit the corresponding pages there to view the latest version.
 
