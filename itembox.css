@@ -282,4 +282,3 @@ body { background-color: #222; color: #e6e6e6}
 .custom-tooltip.wds-open-to-right .wds-dropdown__content { /* fix misposition */
 	top: 30%;
 }
-}
